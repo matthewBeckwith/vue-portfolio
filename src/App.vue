@@ -1,9 +1,14 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <div id="nav">
+      <h1>Matthew Beckwith</h1>
+      <div>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+      </div>
+    </div>
+    <router-view />
   </div>
-  <router-view />
 </template>
 
 <style>
@@ -16,6 +21,9 @@
 }
 
 #nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 30px;
 }
 
